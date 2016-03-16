@@ -26,7 +26,7 @@
 
 //1.1商场
 #define kShop @"http://api.gjla.com/app_admin_v400/api/mall/list?pageSize=10&longitude=112.426904&latitude=34.618939&districtId=&cityId=bd21203d001c11e4b2bf00163e000dce&pageNum=1"
-
+#define kBrand @"";
 
 
 

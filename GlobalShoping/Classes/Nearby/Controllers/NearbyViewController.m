@@ -8,6 +8,8 @@
 
 #import "NearbyViewController.h"
 
+
+
 @interface NearbyViewController ()
 
 @end
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   
     
 }
 

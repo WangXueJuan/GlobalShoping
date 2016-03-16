@@ -29,16 +29,18 @@
     UINavigationController *MainNav = mainStory.instantiateInitialViewController;
     //设置图片
     MainNav.tabBarItem.image = [UIImage imageNamed:@"tab_home_normal"];
-    MainNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    MainNav.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -2, 0);
+    MainNav.tabBarItem.title = @"首页";
     //设置选中图片
     UIImage *mainImage = [UIImage imageNamed:@"tab_home_selected"];
     MainNav.tabBarItem.selectedImage = [mainImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //附近
     UIStoryboard *nearbyStory = [UIStoryboard storyboardWithName:@"Nearby" bundle:nil];
     UINavigationController *nearNav = nearbyStory.instantiateInitialViewController;
+    nearNav.tabBarItem.title = @"附近";
     //设置图片
     nearNav.tabBarItem.image = [UIImage imageNamed:@"tab"];
-    nearNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    nearNav.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -2, 0);
     //设置选中图片
     UIImage *nearImage = [UIImage imageNamed:@"tabselect"];
     nearNav.tabBarItem.selectedImage = [nearImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -48,7 +50,8 @@
     UINavigationController *globalNav = globalStory.instantiateInitialViewController;
     //设置图片
     globalNav.tabBarItem.image = [UIImage imageNamed:@"tab_mall_normal"];
-    globalNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    globalNav.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -2, 0);
+    globalNav.tabBarItem.title = @"全球购";
     //设置选中图片
     UIImage *globalImage = [UIImage imageNamed:@"tab_mall_selected"];
     globalNav.tabBarItem.selectedImage = [globalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -56,9 +59,10 @@
     //发现
     UIStoryboard *discoverStory = [UIStoryboard storyboardWithName:@"Discover" bundle:nil];
     UINavigationController *discoverNav = discoverStory.instantiateInitialViewController;
+    discoverNav.tabBarItem.title = @"发现";
     //设置图片
     discoverNav.tabBarItem.image = [UIImage imageNamed:@"tab_discover_normal"];
-    discoverNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    discoverNav.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -2, 0);
     //设置选中图片
     UIImage *discoverImage = [UIImage imageNamed:@"tab_discover_selected"];
     discoverNav.tabBarItem.selectedImage = [discoverImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -68,13 +72,15 @@
     UINavigationController *MineNav = mineStory.instantiateInitialViewController;
     //设置图片
     MineNav.tabBarItem.image = [UIImage imageNamed:@"tab_person_normal"];
-    MineNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    MineNav.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -2, 0);
+    MineNav.tabBarItem.title = @"我的";
     //设置选中图片
     UIImage *mineImage = [UIImage imageNamed:@"tab_person_selected"];
     MineNav.tabBarItem.selectedImage = [mineImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //添加到tabBarVC上
     self.tablebarVC.viewControllers = @[MainNav, nearNav, globalNav, discoverNav, MineNav];
+    self.tablebarVC.tabBar.tintColor = kColor;
     self.window.rootViewController = self.tablebarVC;
     
     
