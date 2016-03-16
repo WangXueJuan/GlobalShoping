@@ -24,6 +24,10 @@
 		7A57F4271C98300B00ADAD3A /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A57F4261C98300B00ADAD3A /* Discover.storyboard */; };
 		7A57F4291C98301600ADAD3A /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A57F4281C98301600ADAD3A /* Mine.storyboard */; };
 		7A57F42B1C98302300ADAD3A /* Nearby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A57F42A1C98302300ADAD3A /* Nearby.storyboard */; };
+		7A5BB0BD1C98EC47002F8EBF /* VOContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0B61C98EC47002F8EBF /* VOContentLayer.m */; };
+		7A5BB0BE1C98EC47002F8EBF /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0B81C98EC47002F8EBF /* VOIndicatorAnimation.m */; };
+		7A5BB0BF1C98EC47002F8EBF /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0BA1C98EC47002F8EBF /* VOSegment.m */; };
+		7A5BB0C01C98EC47002F8EBF /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0BC1C98EC47002F8EBF /* VOSegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,14 @@
 		7A57F42A1C98302300ADAD3A /* Nearby.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Nearby.storyboard; sourceTree = "<group>"; };
 		7A57F42D1C98370C00ADAD3A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		7A57F42E1C983A4100ADAD3A /* HDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDefine.h; sourceTree = "<group>"; };
+		7A5BB0B51C98EC47002F8EBF /* VOContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOContentLayer.h; sourceTree = "<group>"; };
+		7A5BB0B61C98EC47002F8EBF /* VOContentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOContentLayer.m; sourceTree = "<group>"; };
+		7A5BB0B71C98EC47002F8EBF /* VOIndicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOIndicatorAnimation.h; sourceTree = "<group>"; };
+		7A5BB0B81C98EC47002F8EBF /* VOIndicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOIndicatorAnimation.m; sourceTree = "<group>"; };
+		7A5BB0B91C98EC47002F8EBF /* VOSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegment.h; sourceTree = "<group>"; };
+		7A5BB0BA1C98EC47002F8EBF /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
+		7A5BB0BB1C98EC47002F8EBF /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
+		7A5BB0BC1C98EC47002F8EBF /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
 		AFFEE03A9FC8021DB8BB39A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA3C16AC3064BC4A48612B01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB459FAE4CA0B2AC4E8671C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -361,10 +373,26 @@
 		7A57F42C1C9836DC00ADAD3A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7A5BB0B41C98EC47002F8EBF /* VOSegmentedControl */,
 				7A57F42D1C98370C00ADAD3A /* Prefix.pch */,
 				7A57F42E1C983A4100ADAD3A /* HDefine.h */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		7A5BB0B41C98EC47002F8EBF /* VOSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				7A5BB0B51C98EC47002F8EBF /* VOContentLayer.h */,
+				7A5BB0B61C98EC47002F8EBF /* VOContentLayer.m */,
+				7A5BB0B71C98EC47002F8EBF /* VOIndicatorAnimation.h */,
+				7A5BB0B81C98EC47002F8EBF /* VOIndicatorAnimation.m */,
+				7A5BB0B91C98EC47002F8EBF /* VOSegment.h */,
+				7A5BB0BA1C98EC47002F8EBF /* VOSegment.m */,
+				7A5BB0BB1C98EC47002F8EBF /* VOSegmentedControl.h */,
+				7A5BB0BC1C98EC47002F8EBF /* VOSegmentedControl.m */,
+			);
+			path = VOSegmentedControl;
 			sourceTree = "<group>";
 		};
 		F426EA330998CF3C3D399357 /* Pods */ = {
@@ -561,10 +589,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5BB0BF1C98EC47002F8EBF /* VOSegment.m in Sources */,
+				7A5BB0BD1C98EC47002F8EBF /* VOContentLayer.m in Sources */,
 				7A57F3D41C982E5900ADAD3A /* ViewController.m in Sources */,
 				7A57F4161C982EA700ADAD3A /* DiscoverViewController.m in Sources */,
 				7A57F4191C982EBC00ADAD3A /* MineViewController.m in Sources */,
+				7A5BB0C01C98EC47002F8EBF /* VOSegmentedControl.m in Sources */,
 				7A57F41C1C982EC900ADAD3A /* NearbyViewController.m in Sources */,
+				7A5BB0BE1C98EC47002F8EBF /* VOIndicatorAnimation.m in Sources */,
 				7A57F3D11C982E5900ADAD3A /* AppDelegate.m in Sources */,
 				7A57F3CE1C982E5900ADAD3A /* main.m in Sources */,
 				7A57F4231C982F2100ADAD3A /* CenterViewController.m in Sources */,

@@ -7,8 +7,10 @@
 //
 
 #import "DiscoverViewController.h"
+#import "VOSegmentedControl.h"
 
 @interface DiscoverViewController ()
+@property(nonatomic,strong) VOSegmentedControl *segmentedController;
 
 @end
 
@@ -17,7 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar.topItem setTitleView:self.segmentedController ];
 }
+
+#pragma mark-------------Lazy
+
+-(VOSegmentedControl *)segmentedController{
+    if (_segmentedController == nil) {
+        self.segmentedController = [[VOSegmentedControl alloc]initWithSegments:@[@{VOSegmentText:@"热门"},@{VOSegmentText:@"搭配"}]];
+        self.segmentedController.contentStyle = VOContentStyleTextAlone;
+        self.segmentedController.indicatorStyle = VOSegCtrlIndicatorStyleBottomLine;
+        self.segmentedController.frame = CGRectMake(kWidth/4, 0, kWidth/2, 44);
+    }
+    return _segmentedController;
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
