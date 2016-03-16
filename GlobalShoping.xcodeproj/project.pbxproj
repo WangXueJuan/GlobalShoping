@@ -28,6 +28,7 @@
 		7A5BB0BE1C98EC47002F8EBF /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0B81C98EC47002F8EBF /* VOIndicatorAnimation.m */; };
 		7A5BB0BF1C98EC47002F8EBF /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0BA1C98EC47002F8EBF /* VOSegment.m */; };
 		7A5BB0C01C98EC47002F8EBF /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0BC1C98EC47002F8EBF /* VOSegmentedControl.m */; };
+		7A5BB0C31C98F852002F8EBF /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BB0C21C98F852002F8EBF /* MatchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		7A5BB0BA1C98EC47002F8EBF /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
 		7A5BB0BB1C98EC47002F8EBF /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
 		7A5BB0BC1C98EC47002F8EBF /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
+		7A5BB0C11C98F852002F8EBF /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		7A5BB0C21C98F852002F8EBF /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
 		AFFEE03A9FC8021DB8BB39A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA3C16AC3064BC4A48612B01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB459FAE4CA0B2AC4E8671C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 			children = (
 				7A57F4141C982EA700ADAD3A /* DiscoverViewController.h */,
 				7A57F4151C982EA700ADAD3A /* DiscoverViewController.m */,
+				7A5BB0C11C98F852002F8EBF /* MatchViewController.h */,
+				7A5BB0C21C98F852002F8EBF /* MatchViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -597,6 +602,7 @@
 				7A5BB0C01C98EC47002F8EBF /* VOSegmentedControl.m in Sources */,
 				7A57F41C1C982EC900ADAD3A /* NearbyViewController.m in Sources */,
 				7A5BB0BE1C98EC47002F8EBF /* VOIndicatorAnimation.m in Sources */,
+				7A5BB0C31C98F852002F8EBF /* MatchViewController.m in Sources */,
 				7A57F3D11C982E5900ADAD3A /* AppDelegate.m in Sources */,
 				7A57F3CE1C982E5900ADAD3A /* main.m in Sources */,
 				7A57F4231C982F2100ADAD3A /* CenterViewController.m in Sources */,

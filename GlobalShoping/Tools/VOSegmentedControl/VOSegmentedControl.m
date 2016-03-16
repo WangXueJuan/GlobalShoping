@@ -73,19 +73,19 @@
 
 	// 色彩
     self.textColor               = [UIColor blackColor];
-    self.selectedTextColor       = [UIColor colorWithRed:0 green:185/255.0f blue:189/255.0f alpha:1.0];
-    self.backgroundColor         = [UIColor whiteColor];
-    self.selectedBackgroundColor = [UIColor whiteColor];
+    self.selectedTextColor       = kColor;
+    self.backgroundColor         = [UIColor clearColor];
+    self.selectedBackgroundColor = [UIColor clearColor];
 
 	// indicator属性
     self.indicatorThickness      = 0;
     self.indicatorCornerRadius   = 0;
     self.indicatorColor          = [UIColor clearColor];
-    self.selectedIndicatorColor  = [UIColor colorWithRed:0 green:185/255.0f blue:189/255.0f alpha:1.0];
+    self.selectedIndicatorColor  = kColor;
 
 	// 分段
-    self.textFont                = [UIFont systemFontOfSize:14];
-    self.selectedTextFont        = [UIFont systemFontOfSize:14];
+    self.textFont                = [UIFont systemFontOfSize:17];
+    self.selectedTextFont        = [UIFont systemFontOfSize:17];
 
 	// Layer
     self.scrollLayer             = [CAScrollLayer layer];
